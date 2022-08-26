@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - GeneratePaymentSourceRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>GeneratePaymentSourceRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.rentingcolombia.certification.proxywompi.runners.html">com.rentingcolombia.certification.proxywompi.runners</a> &gt; GeneratePaymentSourceRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.770s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Created payment source"></a>
+<h3 class="failures">Created payment source</h3>
+<span class="code">
+<pre>net.serenitybdd.core.exceptions.SerenityManagedException: Unrecognized token 'Request': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)&quot;Request from this ip address is not allowed&quot;; line: 1, column: 8]
+	at app//com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at app//com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at app//com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at app//com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at app//com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at app//com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at app//com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at app//com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$1.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at app//io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at app//io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at app//io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at app//io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at app//io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at app//io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at app//net.serenitybdd.rest.decorators.ResponseDecorated.as(ResponseDecorated.java:62)
+	at app//com.rentingcolombia.certification.proxywompi.tasks.Authenticate.performAs(Authenticate.java:26)
+	at app//com.rentingcolombia.certification.proxywompi.tasks.Authenticate$ByteBuddy$i1wv1Vn7.performAs$accessor$T6VdKzXM(Unknown Source)
+	at java.base@11.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.15/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//com.rentingcolombia.certification.proxywompi.tasks.Authenticate$ByteBuddy$i1wv1Vn7.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:254)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:195)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:202)
+	at app//net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:178)
+	at app//com.rentingcolombia.certification.proxywompi.definitions.GeneralDefinitions.theUserGetsToken(GeneralDefinitions.java:27)
+	at java.base@11.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.15/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at app//io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at app//io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at app//io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at app//io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at app//io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at app//io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at app//io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at app//io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at app//io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at app//io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at app//io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at app//io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at app//io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)
+	at app//io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)
+	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at app//io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:287)
+	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at app//org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at app//org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at app//org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at app//org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at app//org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.15/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Created payment source</td>
+<td class="failures">0.770s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>21:24:42.810 [Test worker] DEBUG io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/cisaza/RentingColombia/Proxywompi/Automation/src/test/resources/features/generate_payment_source.feature
+21:24:42.814 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@dff2aeeb
+21:24:42.815 [Test worker] INFO  - Test Suite Started: as a RentingColombia project's i need created a source payment
+21:24:42.831 [Test worker] DEBUG io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/cisaza/RentingColombia/Proxywompi/Automation/src/test/resources/features/generate_payment_source.feature
+21:24:42.833 [Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Created payment source(as-a-rentingcolombia-project-s-i-need-created-a-source-payment;created-payment-source)
+--------------------------------------------------------------------------------
+21:24:42.861 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: GeneralDefinitions.theUserGetsToken - performAs
+21:24:42.867 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Authenticate.performAs - {0} executes a POST on the resource #resource
+21:24:42.892 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}-&gt;http://rcclusterdevrc.eastus2.cloudapp.azure.com:9042
+21:24:43.008 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to rcclusterdevrc.eastus2.cloudapp.azure.com:9042
+21:24:43.086 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+21:24:43.087 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+21:24:43.087 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+21:24:43.087 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+21:24:43.087 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+21:24:43.087 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/Token HTTP/1.1
+21:24:43.088 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;POST /api/Token HTTP/1.1[\r][\n]&quot;
+21:24:43.088 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+21:24:43.088 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;x-rentingcom-from: inside-cluster[\r][\n]&quot;
+21:24:43.088 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+21:24:43.088 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 0[\r][\n]&quot;
+21:24:43.088 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: rcclusterdevrc.eastus2.cloudapp.azure.com:9042[\r][\n]&quot;
+21:24:43.088 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+21:24:43.088 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)[\r][\n]&quot;
+21:24:43.088 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+21:24:43.088 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+21:24:43.088 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; POST /api/Token HTTP/1.1
+21:24:43.089 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+21:24:43.089 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; x-rentingcom-from: inside-cluster
+21:24:43.089 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: application/json
+21:24:43.089 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 0
+21:24:43.089 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Host: rcclusterdevrc.eastus2.cloudapp.azure.com:9042
+21:24:43.089 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+21:24:43.089 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+21:24:43.089 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+21:24:43.406 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 403 Forbidden[\r][\n]&quot;
+21:24:43.406 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Fri, 26 Aug 2022 02:24:43 GMT[\r][\n]&quot;
+21:24:43.406 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: text/plain; charset=utf-8[\r][\n]&quot;
+21:24:43.406 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Server: Kestrel[\r][\n]&quot;
+21:24:43.406 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Length: 43[\r][\n]&quot;
+21:24:43.407 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Request-Context: appId=cid-v1:b93ca6f4-34ca-463d-9473-498245c80e40[\r][\n]&quot;
+21:24:43.407 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+21:24:43.407 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 403 Forbidden
+21:24:43.407 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 403 Forbidden
+21:24:43.407 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Date: Fri, 26 Aug 2022 02:24:43 GMT
+21:24:43.407 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: text/plain; charset=utf-8
+21:24:43.407 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Server: Kestrel
+21:24:43.407 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Length: 43
+21:24:43.407 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Request-Context: appId=cid-v1:b93ca6f4-34ca-463d-9473-498245c80e40
+21:24:43.407 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+21:24:43.408 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/plain; charset=utf-8
+21:24:43.408 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+21:24:43.414 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Request from this ip address is not allowed&quot;
+21:24:43.415 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7983a5d5
+21:24:43.415 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+21:24:43.416 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} executes a POST on the resource #resource
+21:24:43.489 [Test worker] ERROR  - 
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+
+Created payment source
+---------------------------------------------------------------
+21:24:43.490 [Test worker] DEBUG  - RELATED ISSUES: 
+21:24:43.580 [Test worker] ERROR  -     Test failed at step: The project authenticate
+21:24:43.581 [Test worker] ERROR  -     Unrecognized token 'Request': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false') at [Source: (String)&quot;Request from this ip address is not allowed&quot;; line: 1, column: 8]
+
+?[31mFailed scenarios:?[0m
+file:///C:/cisaza/RentingColombia/Proxywompi/Automation/src/test/resources/features/generate_payment_source.feature:8 # Created payment source
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[36m2 skipped?[0m)
+0m0,776s
+
+
+net.serenitybdd.core.exceptions.SerenityManagedException: Unrecognized token 'Request': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)&quot;Request from this ip address is not allowed&quot;; line: 1, column: 8]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at net.serenitybdd.rest.decorators.ResponseDecorated.as(ResponseDecorated.java:62)
+	at com.rentingcolombia.certification.proxywompi.tasks.Authenticate.performAs(Authenticate.java:26)
+	at com.rentingcolombia.certification.proxywompi.tasks.Authenticate$ByteBuddy$i1wv1Vn7.performAs$accessor$T6VdKzXM(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.rentingcolombia.certification.proxywompi.tasks.Authenticate$ByteBuddy$i1wv1Vn7.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:254)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:195)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:202)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:178)
+	at com.rentingcolombia.certification.proxywompi.definitions.GeneralDefinitions.theUserGetsToken(GeneralDefinitions.java:27)
+	at ?.the project gets token(file:///C:/cisaza/RentingColombia/Proxywompi/Automation/src/test/resources/features/generate_payment_source.feature:5)
+
+
+21:24:43.588 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+21:24:43.590 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+21:24:43.591 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@5b8b9b2d
+21:24:43.592 [pool-3-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome as a RentingColombia project's i need created a source payment:Created payment source
+21:24:43.592 [pool-3-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@5b8b9b2d: Generating report for test outcome: as a RentingColombia project's i need created a source payment:Created payment source
+21:24:43.593 [pool-3-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Created payment source to file C:\cisaza\RentingColombia\Proxywompi\Automation\target\site\serenity\2ce3369a48b84dfa9d59da0042fa6cd9bf35698e7bcdf6bacecbfd3607a18099.json (using temp file C:\cisaza\RentingColombia\Proxywompi\Automation\target\site\serenity\2ce3369a48b84dfa9d59da0042fa6cd9bf35698e7bcdf6bacecbfd3607a18099.json2d0e1925-078b-46d5-a79d-a0a4447a5a74)
+21:24:43.608 [pool-3-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome as a RentingColombia project's i need created a source payment:Created payment source done
+21:24:43.609 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+21:24:43.609 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 17 ms
+21:24:43.609 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@7a7bb083
+21:24:43.610 [pool-4-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome as a RentingColombia project's i need created a source payment:Created payment source
+21:24:43.610 [pool-4-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@7a7bb083: Generating report for test outcome: as a RentingColombia project's i need created a source payment:Created payment source
+21:24:43.614 [pool-4-thread-1] DEBUG serenity.reporting - Generating report in 2ce3369a48b84dfa9d59da0042fa6cd9bf35698e7bcdf6bacecbfd3607a18099.html
+21:24:43.645 [pool-4-thread-1] DEBUG serenity.reporting - Generated report 2ce3369a48b84dfa9d59da0042fa6cd9bf35698e7bcdf6bacecbfd3607a18099.html in 31 ms
+21:24:43.645 [pool-4-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome as a RentingColombia project's i need created a source payment:Created payment source done
+21:24:43.645 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+21:24:43.645 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 36 ms
+21:24:43.652 [Test worker] DEBUG io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/cisaza/RentingColombia/Proxywompi/Automation/src/test/resources/features/generate_payment_source.feature
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.3.1</a> at 25/08/2022, 9:24:43 p. m.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"as a RentingColombia project's i need tokenize a card for created a source payment","Crear token","PENDING","2022-08-18T17:19:33.985-05:00[America/Bogota]","0.0","5.51"
+"as a RentingColombia project's i need tokenize a card for created a source payment","Get token card","PENDING","2022-08-21T19:24:58.707-05:00[America/Bogota]","0.0","0.02"
+"as a RentingColombia project's i need tokenize a card for created a source payment","Card tokenization","SUCCESS","2022-08-25T21:24:35.365417-05:00[America/Bogota]","0.0","6.48"
+"as a RentingColombia project's i need created a source payment","Created payment source","ERROR","2022-08-25T21:24:42.8339338-05:00[America/Bogota]","0.0","0.75"
